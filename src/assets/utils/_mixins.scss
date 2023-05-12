@@ -1,0 +1,27 @@
+@mixin hover($_propertys...) {
+  transition: all 0.7s;
+  &:hover {
+    @each $_property, $value in $_propertys {
+      #{$_property}: $value;
+    }
+    
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 638px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin onDesign {
+  @media (min-width: 1439px) {
+    @content;
+  }
+}

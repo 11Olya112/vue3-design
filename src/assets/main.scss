@@ -1,0 +1,11 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+
+body {
+  background: $c-pink;
+}
+
+html {
+  scroll-behavior: smooth;
+}
